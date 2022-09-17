@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #333;
+}
+.container{
+    width: 90vw;
+    background-color: #222;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 50px 10px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 60px;
+}
+.image img{
+    max-width: 40vw;
+    max-height: 70vh;
+   
+}
+
+
+.image input{
+    display: none;
+}
+.image label{
+    color: white;
+    border: 2px white solid;
+    padding: 2px 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: auto;
+}
+.image label:hover{
+    letter-spacing: 1px;
+    color: #999;
+}
+.filters{
+    width: 40%;
+}
+ul ,li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+    padding-right: 10px;
+}
+ul li label{
+    color: white;
+}
+ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+ul li a ,ul li span{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    border-style: none;
+    text-decoration: none;
+    
+}
+ul li a:hover ,ul li span:hover{
+    color: #888;
+}
+@media (max-width:550px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
